@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="util.css">
-
+    <!-- <div class="d-block d-md-none">Visible only on mobile</div>
+    <div class="d-none d-md-block">Visible only on desktop</div> -->
+    
 </head>
 <body>
     <div class="judul">
@@ -23,17 +25,20 @@
         </div>
     </div>
     <div class="page-3"> 
-        <div class="content">
-                <h1>
-                    <i>
-                        Lokasi
-                    </i> 
-                </h1>
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7900.708996215318!2d110.62896485!3d-8.065276599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb6da08668315%3A0xea50d9ed832f061d!2sJambu%2C%20Hargosari%2C%20Tanjungsari%2C%20Gunung%20Kidul%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1719379378784!5m2!1sen!2sid" width="400" height="200" style="border:1px solid black; width: 40%; height: 50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <br>
-                <a target="_blank" class="lokasi" href="https://maps.app.goo.gl/Hkpt4yT9gQbFtsbW8">
-                    <i>📌 Dusun Jambu</i>
-                </a>
+        <div class="content d-flex justify-content align-items-center">
+            <div class="d-none d-md-block">
+                <h2><i>Dusun Jambu</i></h2>
+                <h4><i>Tanjungsari, Hargosari</i></h4>
+                <h6><i>Gunungkidul</i></h6>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7900.708996215318!2d110.62896485!3d-8.065276599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb6da08668315%3A0xea50d9ed832f061d!2sJambu%2C%20Hargosari%2C%20Tanjungsari%2C%20Gunung%20Kidul%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1719379378784!5m2!1sen!2sid" width="400" height="200" style="border:1px solid black; width:100%; height: 50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="d-block d-md-none">
+                <br><br>
+                <h2><i>Dusun Jambu</i></h2>
+                <h4><i>Tanjungsari, Hargosari</i></h4>
+                <h6><i>Gunungkidul</i></h6>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7900.708996215318!2d110.62896485!3d-8.065276599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb6da08668315%3A0xea50d9ed832f061d!2sJambu%2C%20Hargosari%2C%20Tanjungsari%2C%20Gunung%20Kidul%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1719379378784!5m2!1sen!2sid" width="100" height="50" style="border:1px solid black; width: 100%; height: 50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
     <div class="page-4">
@@ -53,14 +58,22 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                </button>
+                <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                  </button>
+                </button>
+                <button class="carousel-control-prev d-block d-md-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="margin-top: 150px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-block d-md-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="margin-top: 148px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
                 <div class="carousel-inner" style="max-height: 500px;">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center align-items-center">
@@ -71,21 +84,21 @@
                           </div>
                     </div> 
                 </div>
-                  <div class="carousel-item">
+                <div class="carousel-item">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="img/lapBola.jpg" class="d-block" style="width: 75%;">
                     </div>
-                  </div>
-                  <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="img/lapBadminton.jpg" width="75%" class="d-block" >
                     </div>
-                  </div>
-                  <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="img/lapFutsal.jpg" class="d-block" style="width: 75%;">
                     </div>
-                  </div>
+                </div>
                   
                 </div>
 
