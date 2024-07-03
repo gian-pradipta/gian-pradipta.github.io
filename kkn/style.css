@@ -33,11 +33,14 @@ div h1 {
 }
 
 .page-3 {
-  height: 70vh;
+  height: 100vh;
   background-image: url("img/peta.jpg");
 }
-.page-3 .map {
-  text-align: left;
+.page-3 .content {
+  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-4 {
