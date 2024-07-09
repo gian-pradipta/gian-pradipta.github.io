@@ -69,8 +69,8 @@ div h1 {
 }
 
 .page-5 {
-  height: 150vh;
-  top: -150vh;
+  height: 200vh;
+  top: -200vh;
   background-image: linear-gradient(black, rgb(151, 126, 107));
   background-attachment: scroll;
   color: white;
@@ -85,7 +85,7 @@ div h1 {
 }
 
 .page-6 {
-  height: 110vh;
+  height: 130vh;
   background-image: linear-gradient(rgba(151, 126, 107, 0.8), white), url("img/backgroundAnyaman.jpg");
   color: white;
 }
@@ -99,5 +99,10 @@ div h1 {
 }
 
 .pembuat {
+  height: 100vh;
+  display: flex;
   background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
