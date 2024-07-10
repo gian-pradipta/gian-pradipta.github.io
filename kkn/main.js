@@ -23,12 +23,18 @@ function mobileMain() {
 }
 
 function windowsMain() {
-
+    const map = document.querySelector(".map");
+    const screenWidth = window.screen.width * 60 / 100;
+    const screenHeight = window.screen.height * 50 / 100;
+    map.style.width = `${screenWidth}px`;
+    map.style.height = `${screenHeight}px`;
 }
 
 function main() {
     if (window.screen.width <= 768) {
         mobileMain();
+    } else {
+      windowsMain();
     }
 
 }

@@ -16,7 +16,15 @@ div {
   background-attachment: fixed;
 }
 div h1 {
-  font-size: 50px;
+  font-size: 400%;
+}
+@media only screen and (max-width: 768px) {
+  div h1 {
+    font-size: 250%;
+  }
+}
+div .carousel-item img {
+  border-radius: 15px;
 }
 
 .judul {
@@ -34,7 +42,11 @@ div h1 {
 
 .page-3 {
   height: 100vh;
+  top: -100vh;
   background-image: url("img/peta.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("img/peta.jpg");
+  background-attachment: scroll;
+  padding-bottom: 5%;
 }
 .page-3 .content {
   padding-top: 15%;
@@ -43,10 +55,52 @@ div h1 {
   justify-content: center;
 }
 
+.transisi-page-3-deskripsi {
+  background-image: linear-gradient(white, rgb(173, 193, 226));
+  background-attachment: scroll;
+  height: 10vh;
+}
+.transisi-page-3-deskripsi .deskripsi-content {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.deskripsi {
+  height: 120vh;
+  top: -120vh;
+  color: white;
+  background-image: url("img/pohonKukun.jpg");
+  background-image: linear-gradient(rgba(173, 193, 226, 0.5), rgba(173, 193, 226, 0), black), url(img/pohonKukunDesktop.jpg);
+  padding-top: 25%;
+  padding: 25%;
+  background-attachment: scroll;
+}
+@media screen and (max-width: 768px) {
+  .deskripsi {
+    padding-top: 135%;
+    background-image: url("img/pohonKukun.jpg");
+    background-image: linear-gradient(rgba(173, 193, 226, 0.5), rgba(173, 193, 226, 0), black), url(img/pohonKukun.jpg);
+  }
+}
+
+.sambutan {
+  background-image: linear-gradient(rgb(0, 0, 0), white);
+  background-attachment: scroll;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.quotes {
+  position: relative;
+  top: -70%;
+  color: white;
+}
+
 .page-4 {
   height: 150vh;
   top: -150vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url("img/lapanganbola.jpg");
+  background-image: linear-gradient(rgb(173, 193, 226), rgba(255, 255, 255, 0.2), rgb(0, 0, 0)), url("img/lapanganbola.jpg");
   background-attachment: scroll;
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
@@ -57,7 +111,7 @@ div h1 {
 }
 @media only screen and (max-width: 768px) {
   .page-4 .carousel-item img {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -69,6 +123,7 @@ div h1 {
 }
 
 .page-5 {
+  padding-bottom: 5%;
   height: 200vh;
   top: -200vh;
   background-image: linear-gradient(black, rgb(151, 126, 107));
@@ -76,25 +131,53 @@ div h1 {
   color: white;
 }
 .page-5 .carousel-item img {
-  width: 75%;
+  height: 75%;
+  width: auto;
 }
 @media only screen and (max-width: 768px) {
   .page-5 .carousel-item img {
-    width: 100%;
+    width: 95%;
+    height: auto;
   }
 }
 
 .page-6 {
-  height: 130vh;
-  background-image: linear-gradient(rgba(151, 126, 107, 0.8), white), url("img/backgroundAnyaman.jpg");
+  height: 180vh;
+  top: -180vh;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgba(151, 126, 107, 0.8), whitesmoke), url("img/backgroundAnyaman.jpg");
   color: white;
 }
 .page-6 .carousel-item img {
-  width: 75%;
+  width: 500px;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .page-6 .carousel-item img {
-    width: 100%;
+    width: 95%;
+  }
+}
+
+.transition-page-6-notable-people {
+  height: 50vh;
+  top: -50vh;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgb(245, 245, 245), rgb(173, 193, 226));
+}
+
+.notable-people {
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(rgb(173, 193, 226), black);
+  background-attachment: scroll;
+}
+.notable-people .carousel-item img {
+  width: 450px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .notable-people .carousel-item img {
+    width: 95%;
   }
 }
 
